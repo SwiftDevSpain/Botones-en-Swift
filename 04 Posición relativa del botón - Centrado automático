@@ -1,0 +1,48 @@
+//
+//  ViewController.swift
+//  botones
+//
+//  Created by iMac on 19/07/14.
+//  Copyright (c) 2014 SwiftDevSpain. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+                            
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+// posición relativa de un botón, centrado automático independientemente del tamaño de la pantalla del iphone 
+
+self.view.backgroundColor = UIColor.orangeColor()
+
+     var menuBoton = UIButton()
+         menuBoton.backgroundColor = UIColor.darkGrayColor()
+         
+     // primero modificamos la posición absoluta del botón indicando que las posiciones "x" e "y" tienen que ser = 0
+        
+        menuBoton.frame = CGRectMake(0, 0, 50, 20)
+         
+     // Añadimos la propiedad de centrado automático y le indicamos que la posición "x" e "y" estén en el centro de la pantalla
+       
+         menuBoton.center = CGPointMake(CGRectGetMidX(self.view.bounds) , CGRectGetMidY(self.view.bounds))
+       
+         menuBoton.layer.cornerRadius = 3
+         menuBoton.layer.borderWidth = 1.5
+         menuBoton.layer.borderColor = UIColor.whiteColor().CGColor
+         menuBoton.setTitle("Menú", forState: UIControlState.Normal)
+         menuBoton.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
+         menuBoton.titleLabel.font = UIFont (name: "Chalkduster", size: 8)
+        
+     // le decimos que muestre el boton por pantalla   
+     self.view.addSubview(menuBoton)
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+   
+}
