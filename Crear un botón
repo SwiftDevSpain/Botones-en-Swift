@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//Aquí iniciamos el código
+// Aquí iniciamos el código
   
   // Primero creamos la variable del bótón
   
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
   // A continuación damos formato al boton
      
-     //Primero le ponemos un fondo negro
+     //Primero le ponemos un fondo Gris
      
        menuBoton.backgroundColor = UIColor.darkGrayColor()
         
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
      
        menuBoton.frame = CGRectMake(25, 35, 50, 20)
         
-     //Por último le añadimos título al botón
+     //Por último le añadimos título al botón que se llamará Menú 
      
        menuBoton.setTitle("Menú", forState: UIControlState.Normal)
         
