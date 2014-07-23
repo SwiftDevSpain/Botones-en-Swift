@@ -1,0 +1,53 @@
+//
+//  ViewController.swift
+//  botones
+//
+//  Created by iMac on 19/07/14.
+//  Copyright (c) 2014 SwiftDevSpain. All rights reserved.
+//
+
+// Programación mínima necesaria para crear un boton y mostrarlo por pantalla
+// En Xcode 6 beta Iniciamos Single View en Swift
+
+import UIKit
+
+class ViewController: UIViewController {
+                            
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+
+// Este era el código mínimo necesario para mostrar un boton añadiendo borde redondeado y color al borde en un fondo naranja
+
+self.view.backgroundColor = UIColor.orangeColor()
+
+     var menuBoton = UIButton()
+         menuBoton.backgroundColor = UIColor.darkGrayColor()
+         menuBoton.frame = CGRectMake(25, 35, 50, 20)
+         menuBoton.layer.cornerRadius = 3
+         menuBoton.layer.borderWidth = 1.5
+         menuBoton.layer.borderColor = UIColor.whiteColor().CGColor
+         menuBoton.setTitle("Menú", forState: UIControlState.Normal)
+         
+    // Ahora añadiremos propiedades al título del botón
+    
+    // Le indicamos que el color de la letra sea en naranja
+    
+       menuBoton.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
+       
+    // Le indicamos el tipo de letra que queramos que muestre
+       
+       menuBoton.titleLabel.font = UIFont (name: "Chalkduster", size: 8)
+        
+        
+// Y mostramos el botón por pantalla
+     self.view.addSubview(menuBoton)
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+   
+}
