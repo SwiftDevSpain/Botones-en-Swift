@@ -1,0 +1,129 @@
+//
+//  ViewController.swift
+//  botones
+//
+//  Created by iMac on 19/07/14.
+//  Copyright (c) 2014 SwiftDevSpain. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+                            
+    override func viewDidLoad() {
+        super.viewDidLoad()
+  
+        
+        
+    self.view.backgroundColor = UIColor.orangeColor()
+    
+   
+        
+        
+    var menuBoton = UIButton()
+        menuBoton.backgroundColor = UIColor.darkGrayColor()
+        menuBoton.layer.cornerRadius = 3
+        menuBoton.layer.borderWidth = 1.5
+        menuBoton.frame = CGRectMake(25, 35, 50, 20)
+        menuBoton.setTitle("Menú", forState: UIControlState.Normal)
+        menuBoton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        menuBoton.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Highlighted)
+        menuBoton.titleLabel.font = UIFont (name: "Chalkduster", size: 8)
+        
+   self.view.addSubview(menuBoton)
+        
+  
+        
+        
+    var sponsorsBoton = UIButton()
+        sponsorsBoton.backgroundColor = UIColor.darkGrayColor()
+        sponsorsBoton.layer.cornerRadius = 3
+        sponsorsBoton.layer.borderWidth = 1.5
+        sponsorsBoton.frame = CGRectMake(130, 35, 50, 20)
+        sponsorsBoton.setTitle("Sponsors", forState: UIControlState.Normal)
+        sponsorsBoton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        sponsorsBoton.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Highlighted)
+        sponsorsBoton.titleLabel.font = UIFont (name: "Chalkduster", size: 8)
+        
+   self.view.addSubview(sponsorsBoton)
+
+
+        
+        
+    var newsBoton = UIButton()
+        newsBoton.backgroundColor = UIColor.darkGrayColor()
+        newsBoton.layer.cornerRadius = 3
+        newsBoton.layer.borderWidth = 1.5
+        newsBoton.frame = CGRectMake(230, 35, 50, 20)
+        newsBoton.setTitle("News", forState: UIControlState.Normal)
+        newsBoton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        newsBoton.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Highlighted)
+        newsBoton.titleLabel.font = UIFont (name: "Chalkduster", size: 8)
+
+    self.view.addSubview(newsBoton)
+
+        
+        
+
+        
+    var languageBoton = UIButton()
+        languageBoton.backgroundColor = UIColor.darkGrayColor()
+        languageBoton.layer.cornerRadius = 3
+        languageBoton.layer.borderWidth = 1.5
+        languageBoton.frame = CGRectMake(25, 500, 50, 20)
+        languageBoton.setTitle("Language", forState: UIControlState.Normal)
+        languageBoton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        languageBoton.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Highlighted)
+        languageBoton.titleLabel.font = UIFont (name: "Chalkduster", size: 8)
+
+    self.view.addSubview(languageBoton)
+    
+
+        
+        
+    var userBoton = UIButton()
+        userBoton.backgroundColor = UIColor.darkGrayColor()
+        userBoton.layer.cornerRadius = 3
+        userBoton.layer.borderWidth = 1.5
+         userBoton.layer.borderColor = UIColor.whiteColor().CGColor
+        userBoton.frame = CGRectMake(0, 0, 50, 20)
+        
+        userBoton.center = CGPointMake(CGRectGetMidX(self.view.bounds) , CGRectGetMaxY(self.view.bounds)-2/10)
+        
+        
+        userBoton.setTitle("User", forState: UIControlState.Normal)
+        userBoton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        userBoton.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Highlighted)
+        userBoton.titleLabel.font = UIFont (name: "Chalkduster", size: 8)
+      
+    self.view.addSubview(userBoton)
+        
+
+        
+        
+    var rssBoton = UIButton()
+        rssBoton.backgroundColor = UIColor.darkGrayColor()
+        rssBoton.layer.cornerRadius = 3
+        rssBoton.layer.borderWidth = 1.5
+        rssBoton.frame = CGRectMake(230, 500, 50, 20)
+        rssBoton.setTitle("rss", forState: UIControlState.Normal)
+        rssBoton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        rssBoton.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Highlighted)
+        rssBoton.titleLabel.font = UIFont (name: "Chalkduster", size: 8)
+
+    self.view.addSubview(rssBoton)
+        
+    
+    }
+    
+    
+
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+   
+}
+
