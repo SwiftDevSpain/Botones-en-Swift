@@ -28,7 +28,7 @@ class ViewController: UIViewController {
      
        menuBoton.backgroundColor = UIColor.darkGrayColor()
         
-     //Después le damos posición (los valores corresponden a ancho, alto, posición x y posición y)
+     //Después le damos posición (los valores corresponden a posición x, posición y, ancho del boton, alto del botón)
      
        menuBoton.frame = CGRectMake(25, 35, 50, 20)
         
