@@ -6,22 +6,42 @@
 //  Copyright (c) 2014 SwiftDevSpain. All rights reserved.
 //
 
+// Programación mínima necesaria para crear un boton y mostrarlo por pantalla
+// En Xcode 6 beta Iniciamos Single View en Swift
+
 import UIKit
 
 class ViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//Aquí iniciamos el código
   
+  // Primero creamos la variable del bótón
   
-    var menuBoton = UIButton()
-        menuBoton.backgroundColor = UIColor.darkGrayColor()
-        menuBoton.frame = CGRectMake(25, 35, 50, 20)
-        menuBoton.setTitle("Menú", forState: UIControlState.Normal)
+     var menuBoton = UIButton()
+    
+  // A continuación damos formato al boton
+     
+     //Primero le ponemos un fondo negro
+     
+       menuBoton.backgroundColor = UIColor.darkGrayColor()
+        
+     //Después le damos posición (los valores corresponden a ancho, alto, posición x y posición y)
+     
+       menuBoton.frame = CGRectMake(25, 35, 50, 20)
+        
+     //Por último le añadimos título al botón
+     
+       menuBoton.setTitle("Menú", forState: UIControlState.Normal)
+        
+     // Y para finalizar le decimos que muestre el boton en pantalla
         
    self.view.addSubview(menuBoton)
         
-
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
